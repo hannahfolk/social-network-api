@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/socialnetwork",
+  process.env.MONGODB_URI || "mongodb://localhost/social-network",
   {
     useFindAndModify: false,
     useNewUrlParser: true,
@@ -17,10 +17,7 @@ mongoose.connect(
   }
 );
 
-mongoose.set("useCreateIndex", true);
-mongoose.set("debug", true);
-
-api.use(routes);
+app.use(routes);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
