@@ -60,6 +60,16 @@ const seedDB = async () => {
   console.log(`${userSeed.length} users inserted!`);
   await Thought.insertMany(thoughtSeed);
   console.log(`${thoughtSeed.length} thoughts inserted!`);
+  thoughtSeed.forEach(async (thought) => {
+    const { thoughtText, username } = thought;
+    const user = await User.findOne({ username });
+    const userId = user._id;
+    const { _id } = await Thought.findOne({
+      thoughtText,
+      username,
+    });
+    await User.findByIdAndUpdate(userId, { $push: { thoughts: _id } });
+  });
 };
 
 emptyDB();
