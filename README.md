@@ -35,7 +35,8 @@ Setting up a backend for a social networking app. Users can create users and add
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://hannahfolk.github.io/social-network-api/)
+[![Product Name Screen Shot][product-screenshot]](https://youtu.be/ijWQNS9Ct6w)
+Click [here](https://youtu.be/ijWQNS9Ct6w) or on the photo above for a walkthrough video of this application.
 
 ### Built With
 
@@ -157,4 +158,4 @@ This project uses the [MIT][license-url] license.
 [license-url]: https://github.com/hannahfolk/social-network-api/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hannahfolk
-[product-screenshot]: social-network-api.gif
+[product-screenshot]: images/screenshot.png
